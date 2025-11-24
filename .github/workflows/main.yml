@@ -31,3 +31,7 @@ jobs:
         run: |
           pytest
 
+      - name: Build documentation
+        run: |
+          sphinx-build -b html docs docs/_build/html
+
